@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container .green-progress-bar, .red-progress-bar, .white-progress-bar, .blue-progress-bar, .yellow-progress-bar {
+    width: 50%;
+    height: 1rem;
+    background-color: rgb(219, 219, 219);
+    border-radius: 10px;
+    margin: .8rem 0;
+}
+
+.container .color {
+    display: flex;
+    justify-content: end;
+    border-radius: 10px;
+    color: #000;
+    font-size: 12px;
+    padding: 0 .5rem;
+    width: 50%;
+    border: 1px solid rgb(156, 156, 156);
+    transition: .5s all;
+}
+
+.container .green-progress-bar .color {
+    background-color: rgba(122, 204, 84, 0.849);
+}
+
+.container .red-progress-bar .color {
+    background-color: rgb(221, 94, 94);
+}
+
+.container .white-progress-bar .color {
+    background-color: rgb(255, 255, 255);
+}
+
+.container .blue-progress-bar .color {
+    background-color: rgba(67, 139, 221, 0.473);
+}
+
+.container .yellow-progress-bar .color {
+    background-color: rgba(245, 210, 16, 0.63);
+}
+
+.container button {
+    font-size: 1.2rem;
+    padding: 1rem 3rem;
+    margin: 2rem 0 0 0;
+    color: #FFF;
+    background-color: rgba(0, 0, 255, 0.651);
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container .color.full {
+    width: 100%;
+}
